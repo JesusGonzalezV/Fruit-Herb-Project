@@ -1,3 +1,19 @@
+/*
+-------------------------------------------------------------------------------
+
+Purpose: The purpose of the Online Herbs Software Applicationis to help users 
+gain more information on curing different types of diseases by listing different
+fruits and herbs that they should consume.
+Authors: Jesus Gonzalez, Francisco Campuzano, Justin Reed
+Date: 5/5/2022
+Course: Software Engineering, Prof. Yilmaz, CS_3321
+
+-------------------------------------------------------------------------------
+*/
+
+
+
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -8,9 +24,9 @@ void herbClass() {
 
 }
 
+// fruitClass function records the user's input for which fruit to view.
 void fruitClass() {
 	string line;
-	
 	
 	int option;
 	cout << "Choose a fruit to view:\n1.Apple\n2.Orange\n";
@@ -46,12 +62,14 @@ void fruitClass() {
 
 }
 
+// modifyFruitHerb function allows the user choose which fruit to modify.
 void modifyFruitHerb() {
 	cout << "Please choose an option:" << endl
 		<< "1.Modify fruit\n2.Modify herb\n";
 
 }
 
+// inventory function allows the user choose which inventory to see.
 void inventory() {
 	int option;
 	cout << "Choose an inventory option:\n";
@@ -69,6 +87,9 @@ void inventory() {
 
 }
 
+/* searchInventory function allows the customer to search for a fruit or 
+   herb name.
+*/ 
 void searchInventory() {
 	string searchItem;
 	string line;
@@ -87,6 +108,7 @@ void searchInventory() {
 	}
 }
 
+// adminUserInterface function allows the admin to modify or add a fruit.
 void adminUserInterface() {
 	int choiceNum;
 	cout << "Please choose an option:\n" << endl
@@ -100,6 +122,7 @@ void adminUserInterface() {
 	}
 }
 
+// userNameVerification function verifies that the admin username is correct.
 string userNameVerification(string userName) {
 	while (true) {
 		if (userName == "admin")
@@ -110,6 +133,7 @@ string userNameVerification(string userName) {
 	}
 }
 
+// staffUserInterface function allows staff to choose between options.
 void staffUserInterface() {
 	int option;
 	cout << "Welcome to the staff user interface" << endl;
@@ -121,6 +145,9 @@ void staffUserInterface() {
 		searchInventory();
 }
 
+/* main function will present the first set of options for either the
+   customer or the admin.
+*/
 int main() {
 	string userName;
 	int choiceNum;
@@ -137,3 +164,16 @@ int main() {
 	}
 	return 0;
 }
+
+/*
+-------------------------------------------------------------------------------
+
+Purpose: The purpose of the Online Herbs Software Applicationis to help users 
+gain more information on curing different types of diseases by listing different
+fruits and herbs that they should consume.
+Authors: Jesus Gonzalez, Francisco Campuzano, Justin Reed
+Date: 5/5/2022
+Course: Software Engineering, Prof. Yilmaz, CS_3321
+
+-------------------------------------------------------------------------------
+*/
