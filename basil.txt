@@ -1,0 +1,3 @@
+Total stock: 200
+Herb ID: 100
+Date added: 5/4/22

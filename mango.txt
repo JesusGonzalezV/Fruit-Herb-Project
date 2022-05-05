@@ -1,0 +1,3 @@
+Total stock: 10
+Fruit ID: 004
+Date added: 5/1/22
